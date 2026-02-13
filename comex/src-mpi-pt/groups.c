@@ -497,6 +497,7 @@ void comex_group_finalize()
     COMEX_ASSERT(MPI_SUCCESS == status);
     status = MPI_Comm_free(&(g_state.comm));
     COMEX_ASSERT(MPI_SUCCESS == status);
+    group_list = NULL;
 }
 
 
